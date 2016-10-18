@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>シングルページレイアウト</title>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Raleway:700,400" %>
+  <%= stylesheet_link_tag "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" %>
   <%= stylesheet_link_tag "top" %>
 </head>
 <body>
@@ -13,8 +13,8 @@
     <h1 class="site-title">HI, MY NAME IS...</h1>
     <p class="site-description">Check out some of my works.</p>
     <div class="buttons">
-      <a class="button" href="#about">LEARN MORE</a>
-      <a class="button button-showy" href="#contact">SEND MESSAGE</a>
+      <%= link_to("LEARN MORE", { anchor: "about" }, class: "button") %>
+      <%= link_to("SEND MESSAGE", { anchor: "contact" }, class: "button button-showy") %>
     </div>
   </header>
   <section class="about" id="about">
@@ -42,7 +42,7 @@
               ひとつめの事例が入ります。<br>
               簡単な説明が入ります。<br>
               使用ツール：XXX, XXX, XXX<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <%= link_to("READ MORE", { anchor: "" }, class: "button button-ghost") %>
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@
               ふたつめの事例が入ります。<br>
               簡単な説明が入ります。<br>
               使用ツール：XXX, XXX, XXX<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <%= link_to("READ MORE", { anchor: "" }, class: "button button-ghost") %>
             </p>
           </div>
         </div>
@@ -68,7 +68,7 @@
               みっつめの事例が入ります。<br>
               簡単な説明が入ります。<br>
               使用ツール：XXX, XXX, XXX<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <%= link_to("READ MORE", { anchor: "" }, class: "button button-ghost") %>
             </p>
           </div>
         </div>
@@ -81,7 +81,7 @@
               よっつめの事例が入ります。<br>
               簡単な説明が入ります。<br>
               使用ツール：XXX, XXX, XXX<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <%= link_to("READ MORE", { anchor: "" }, class: "button button-ghost") %>
             </p>
           </div>
         </div>
