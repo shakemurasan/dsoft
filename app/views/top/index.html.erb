@@ -2,33 +2,28 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>シングルページレイアウト</title>
   <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Raleway:700,400" %>
   <%= stylesheet_link_tag "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" %>
   <%= stylesheet_link_tag "top" %>
 </head>
 <body>
   <header class="header">
-    <p class="site-title-sub">Web designer's portfolio</p>
-    <h1 class="site-title">HI, MY NAME IS...</h1>
-    <p class="site-description">Check out some of my works.</p>
+    <p class="site-title-sub">Software engineering study group</p>
+    <h1 class="site-title">ソフトウェア工学勉強会</h1>
+    <p class="site-description">著名なソフトウェア工学本の輪読会</p>
     <div class="buttons">
-      <%= link_to("LEARN MORE", { anchor: "about" }, class: "button") %>
+      <%= link_to("ABOUT US", { anchor: "about" }, class: "button") %>
       <%= link_to("SEND MESSAGE", { anchor: "contact" }, class: "button button-showy") %>
     </div>
   </header>
   <section class="about" id="about">
-    <h2 class="heading">ABOUT ME</h2>
+    <h2 class="heading">ABOUT US</h2>
     <p class="about-text">
-      はじめまして。日本でWebデザイナーをしています。<br>
-      デザインの専門学校を卒業し、製作会社での業務経験を経て、
-      現在はフリーランスとして働いています。
+      月に1, 2回のペースで、ソフトウェア工学の著名な本を皆で輪読しています。
     </p>
     <p class="about-text">
-      このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、
-      架空のWebデザイナーのポートフォリオサイトです。<br>
-      このサンプルのようなサイトをいちから作る過程を通して、
-      HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。
+      突発的にLT大会や、開発合宿を開催しており、<br>
+      学ぶことはもちろん、持続することを目指して活動しています。
     </p>
   </section>
   <section class="works">
