@@ -104,24 +104,24 @@ body {
 }
 
 
-/* WORKS */
+/* BOOKS */
 
-.works {
+.books {
   background-color: #383634;
   padding: 80px 0;
 }
 
-.works-wrapper {
+.books-wrapper {
   display: table;
   width: 100%;
   margin-top: 60px;
   table-layout: fixed;
 }
-.work-box {
+.book-box {
   position: relative;
   display: table-cell;
 }
-.work-box::after {
+.book-box::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -133,31 +133,31 @@ body {
   opacity: 0.2;
   transform: scaleY(-1);
 }
-.work-box.tree::after {
+.book-box.tree::after {
   background-image: url("top/tree.jpg");
 }
-.work-box.building::after {
+.book-box.building::after {
   background-image: url("top/building.jpg");
 }
-.work-box.lake::after {
+.book-box.lake::after {
   background-image: url("top/lake.jpg");
 }
-.work-box.sky::after {
+.book-box.sky::after {
   background-image: url("top/sky.jpg");
 }
-.work-box:nth-child(odd) .work-image {
+.book-box:nth-child(odd) .book-image {
   margin: 60% 0 0;
 }
-.work-box:nth-child(odd) .work-description,
-.work-box:nth-child(odd)::after {
+.book-box:nth-child(odd) .book-description,
+.book-box:nth-child(odd)::after {
   top: 0;
 }
-.work-image {
+.book-image {
   display: block;
   width: 100%;
   margin: 0 0 60%;
 }
-.work-description{
+.book-description{
   position: absolute;
   top: 50%;
   left: 0;
@@ -166,19 +166,19 @@ body {
   height: 50%;
   overflow-y: auto;
 }
-.work-description-inner {
+.book-description-inner {
   display: table;
   width: 100%;
   height: 100%;
   padding: 20px;
 }
-.work-text {
+.book-text {
   display: table-cell;
   vertical-align: middle;
   font-size: 1.2rem;
   line-height: 2;
 }
-.work-text .button {
+.book-text .button {
   width: 60%;
   margin-top: 20px;
   padding: 3px;
@@ -189,23 +189,23 @@ body {
 }
 
 
-/* MY SKILLS */
+/* RECENT ACTIVITIES */
 
-.skills {
+.activities {
   padding: 80px 0;
   background-color: #fff;
   color: #333;
 }
-.skills-wrapper {
+.activities-wrapper {
   display: table;
   width: 80%;
   margin: 50px auto 0;
   table-layout: fixed;
 }
-.skill-box {
+.activity-box {
   display: table-cell;
 }
-.skill-icon {
+.activity-icon {
   width: 150px;
   height: 150px;
   margin-bottom: 30px;
@@ -215,11 +215,11 @@ body {
   font-size: 8rem;
   line-height: 142px;
 }
-.skill-title {
+.activity-title {
   margin: 0 20px 20px;
   font-size: 2rem;
 }
-.skill-text {
+.activity-text {
   margin: 0 20px;
   line-height: 2;
 }
