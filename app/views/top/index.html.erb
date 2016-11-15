@@ -9,12 +9,8 @@
 <body>
   <header class="header">
     <p class="site-title-sub">Software engineering study group</p>
-    <h1 class="site-title">ソフトウェア工学勉強会</h1>
+    <h1 class="site-title">dodosoft</h1>
     <p class="site-description">著名なソフトウェア工学本の輪読会</p>
-    <div class="buttons">
-      <%= link_to("ABOUT US", { anchor: "about" }, class: "button") %>
-      <%= link_to("SEND MESSAGE", { anchor: "contact" }, class: "button button-showy") %>
-    </div>
   </header>
   <section class="about" id="about">
     <h2 class="heading">ABOUT US</h2>
@@ -27,59 +23,31 @@
     </p>
   </section>
   <section class="books">
-    <h2 class="heading">BOOKS</h2>
+    <h2 class="heading">CURRENT BOOKS</h2>
     <div class="books-wrapper">
-      <div class="book-box tree">
-        <%= image_tag("top/tree.jpg", class: "book-image", alt: "製作事例1") %>
-        <div class="book-description">
-          <div class="book-description-inner">
-            <p class="book-text">
-              ひとつめの事例が入ります。<br>
-              簡単な説明が入ります。<br>
-              使用ツール：XXX, XXX, XXX<br>
-              <%= link_to("READ MORE", { anchor: "" }, class: "button button-ghost") %>
-            </p>
-          </div>
-        </div>
+      <div class="book-box">
+        <%= image_tag("top/micro_service.jpeg", class: "book-image") %>
+        <div class="book-title">マイクロサービスアーキテクチャ</div>
+        <p class="book-text">
+          マイクロサービスとは、Thought Works社のマーチンファウラーと<br>
+          ジェームス・ルイスが最初に提唱したソフトウェアアーキテクチャです。<br>
+          モノリシック(一枚岩)なアーキテクチャを、ビジネス機能に沿って<br>
+          複数の小さい「マイクロサービス」に分割し、それらを連携させる<br>
+          アーキテクチャにすることで、迅速なデプロイ、優れた回復性や<br>
+          スケーラビリティといった利点を実現しようとするものです。...背表紙より
+
+        </p>
       </div>
-      <div class="book-box building">
-        <%= image_tag("top/building.jpg", class: "book-image", alt: "製作事例2") %>
-        <div class="book-description">
-          <div class="book-description-inner">
-            <p class="book-text">
-              ふたつめの事例が入ります。<br>
-              簡単な説明が入ります。<br>
-              使用ツール：XXX, XXX, XXX<br>
-              <%= link_to("READ MORE", { anchor: "" }, class: "button button-ghost") %>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="book-box lake">
-        <%= image_tag("top/lake.jpg", class: "book-image", alt: "製作事例3") %>
-        <div class="book-description">
-          <div class="book-description-inner">
-            <p class="book-text">
-              みっつめの事例が入ります。<br>
-              簡単な説明が入ります。<br>
-              使用ツール：XXX, XXX, XXX<br>
-              <%= link_to("READ MORE", { anchor: "" }, class: "button button-ghost") %>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="book-box sky">
-        <%= image_tag("top/sky.jpg", class: "book-image", alt: "製作事例4") %>
-        <div class="book-description">
-          <div class="book-description-inner">
-            <p class="book-text">
-              よっつめの事例が入ります。<br>
-              簡単な説明が入ります。<br>
-              使用ツール：XXX, XXX, XXX<br>
-              <%= link_to("READ MORE", { anchor: "" }, class: "button button-ghost") %>
-            </p>
-          </div>
-        </div>
+      <div class="book-box">
+        <%= image_tag("top/puzzle.jpg", class: "book-image") %>
+        <div class="book-title">プログラマ脳を鍛える数学パズル</div>
+        <p class="book-text">
+          本書では、70問の数学パズルを解くためのプログラムを作成していきます。<br>
+          実装方法よりも「どういう手順で実装すれば解けそうか」を考える事が重要。<br>
+          パズルを解くうちにアルゴリズムが身につき、<br>
+          シンプルで高速なコードが書けるようになります。<br>
+          楽しみながらスキルアップもできて一石二鳥。さっそく挑戦してみましょう!
+        </p>
       </div>
     </div>
   </section>
@@ -87,44 +55,29 @@
     <h2 class="heading">RECENT ACTIVITIES</h2>
     <div class="activities-wrapper">
       <div class="activity-box">
-        <i class="activity-icon fa fa-lightbulb-o"></i>
-        <div class="activity-title">IDEA</div>
+        <div class="activity-title">第95回</div>
         <p class="activity-text">
-          何かを考えることが好きです。<br>
-          新しいことを思いついては試しています。<br>
-          ディレクションの経験もあります。
+          アットウェアさんで開催。<br>
+          マイクロサービスアーキテクチャ10章をやりました。<br>
+          また、100回記念の企画について、話を進めました。
         </p>
       </div>
       <div class="activity-box">
-        <i class="activity-icon fa fa-paint-brush"></i>
-        <div class="activity-title">DESIGN</div>
+        <div class="activity-title">第94回</div>
         <p class="activity-text">
-          見た目の綺麗さだけじゃなくて、<br>
-          使いやすさ、情報の伝わりやすさなど、<br>
-          その先まで考えることを意識しています。
+          ほんげえ。
         </p>
       </div>
       <div class="activity-box">
-        <i class="activity-icon fa fa-code"></i>
-        <div class="activity-title">DESIGN</div>
+        <div class="activity-title">第93回</div>
         <p class="activity-text">
-          HTML/CSSコーディングも行います。<br>
-          正しく美しいマークアップと、<br>
-          今後の変更への強さを考慮しています。
+          ほげほげ。
         </p>
       </div>
     </div>
   </section>
-  <section class="contact" id="contact">
-    <h2 class="heading">CONTACT</h2>
-    <form class="contact-form">
-      <input type="text" name="name" placeholder="NAME">
-      <textarea name="message" placeholder="MESSAGE"></textarea>
-      <input type="submit" value="SEND">
-    </form>
-  </section>
   <footer class="footer">
-    © sample site
+    © dodosoft
   </footer>
   <%= javascript_include_tag 'placeholders.min.js' %>
 </body>
