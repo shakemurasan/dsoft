@@ -11,19 +11,29 @@
     <p class="site-title-sub">Software engineering study group</p>
     <h1 class="site-title">dodosoft</h1>
     <p class="site-description">著名なソフトウェア工学本の輪読会</p>
+    <div class="buttons">
+      <a class="button button-showy" href="#about">ABOUT US</a>
+      <a class="button" href="#books">BOOKS</a>
+      <a class="button" href="#activities">ACTIVITIES</a>
+    </div>
   </header>
   <section class="about" id="about">
     <h2 class="heading">ABOUT US</h2>
     <p class="about-text">
-      月に1, 2回のペースで、ソフトウェア工学の著名な本を皆で輪読しています。
-    </p>
-    <p class="about-text">
-      突発的にLT大会や、開発合宿を開催しており、<br>
-      学ぶことはもちろん、持続することを目指して活動しています。
+      5年目社会人の同期で設計・実装について勉強しています。<br>
+      新人のころから月1，2回ペース(土日など休日を利用して開催)<br>
+      で90回以上実施してきました。(2016年10月現在)<br>
+      そのとき必要と感じた技術を中心に輪読メインで学習しています。<br>
+      突発的にLT大会や、開発合宿も開催しており、<br>
+      学ぶことはもちろん、楽しく持続することを目指して活動しています。
     </p>
   </section>
-  <section class="books">
+  <section class="books" id="books">
     <h2 class="heading">CURRENT BOOKS</h2>
+    <p class="book-intro">
+      現在勉強会で輪読および演習に使っている書籍です。<br>
+      過去に輪読した書籍を参照したい場合、[more] をクリックしてください。
+    </p>
     <div class="books-wrapper">
       <div class="book-box">
         <%= image_tag("top/micro_service.jpeg", class: "book-image") %>
@@ -50,9 +60,16 @@
         </p>
       </div>
     </div>
+    <div class="book-button">
+      <a class="button" href="#books">MORE</a>
+    </div>
   </section>
-  <section class="activities">
+  <section class="activities" id="activities">
     <h2 class="heading">RECENT ACTIVITIES</h2>
+    <p class="activity-intro">
+      直近3回分の活動について記録しています。<br>
+      更に過去の活動を参照したい場合は、[more] をクリックしてください。
+    </p>
     <div class="activities-wrapper">
       <div class="activity-box">
         <div class="activity-title">第95回</div>
@@ -74,6 +91,9 @@
           ほげほげ。
         </p>
       </div>
+    </div>
+    <div class="activity-button">
+      <a class="button" href="#activities">MORE</a>
     </div>
   </section>
   <footer class="footer">
