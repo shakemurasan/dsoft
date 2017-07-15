@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+      args:
+        WORK: "/usr/src/dodosoft"
+    volumes:
+      # ソースコード一式マウント
+      - "..:/usr/src/dodosoft"
+      # 起動スピード向上のためgem関連を保存しておく
+      - "./data/app/bundle/gems:/usr/local/bundle/gems"
+      - "./data/app/bundle/cache:/usr/local/bundle/cache"
+      - "./data/app/bundle/extensions:/usr/local/bundle/extensions"
+      - "./data/app/bundle/specifications:/usr/local/bundle/specifications"
+      - "./data/app/bundle/.bundle:/root/.bundle"
+    ports:
+      - "3000:3000"
+  postgres:
+    build:
+      context: .
+      dockerfile: Dockerfile.postgres
+    volumes:
+      # DBのデータ永続化
+      - "./data/postgres:/var/lib/postgresql/data"
+      # 初回起動時dsoftデータベース作成
+      - "./init-user-db.sh:/docker-entrypoint-initdb.d/init-user-db.sh"
