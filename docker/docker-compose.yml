@@ -16,6 +16,9 @@ services:
       - "./data/app/bundle/extensions:/usr/local/bundle/extensions"
       - "./data/app/bundle/specifications:/usr/local/bundle/specifications"
       - "./data/app/bundle/.bundle:/root/.bundle"
+    environment:
+      DSOFT_DATABASE_DEV_USER: postgres
+      DSOFT_DATABASE_DEV_HOST: postgres
     ports:
       - "3000:3000"
   postgres:
