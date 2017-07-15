@@ -22,3 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# Dockerによる実行
+
+以下のコマンドで、ワークツリー上のソースコードをrailsコンテナ内にマウントして実行します。
+
+```bash
+$ cd docker
+$ docker-compose up
+```
