@@ -8,4 +8,5 @@ RUN mkdir -p $WORK && \
     rm -rf /var/lib/apt/lists/*
 WORKDIR $WORK
 CMD bundle install && \
+    rm -f tmp/pids/server.pid && \
     rails server -b 0.0.0.0 -p 3000
