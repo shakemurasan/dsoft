@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Raleway:700,400" %>
+  <%= stylesheet_link_tag "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" %>
+  <%= stylesheet_link_tag "top" %>
+</head>
+<body>
+  <header class="header">
+    <p class="site-title-sub">Software engineering study group</p>
+    <h1 class="site-title">dodosoft</h1>
+    <p class="site-description">著名なソフトウェア工学本の輪読会</p>
+    <div class="buttons">
+      <a class="button button-showy" href="#about">ABOUT US</a>
+      <a class="button" href="#books">BOOKS</a>
+      <a class="button" href="#activities">ACTIVITIES</a>
+    </div>
+  </header>
+  <section class="about" id="about">
+    <h2 class="heading">ABOUT US</h2>
+    <p class="about-text">
+      5年目社会人の同期で設計・実装について勉強しています。<br>
+      新人のころから月1，2回ペース(土日など休日を利用して開催)<br>
+      で90回以上実施してきました。(2016年10月現在)<br>
+      そのとき必要と感じた技術を中心に輪読メインで学習しています。<br>
+      突発的にLT大会や、開発合宿も開催しており、<br>
+      学ぶことはもちろん、楽しく持続することを目指して活動しています。
+    </p>
+  </section>
+
+  <%= render :partial => "top/books" %>
+
+  <%= render :partial => "top/activities" %>
+
+  <section>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeReSkQWGMtvc2WfyZbnOF7HeiVDknylvJJGoBmwdddm_mHQw/viewform?embedded=true" width="760" height="900" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
+  </section>
+  <footer class="footer">
+    © dodosoft
+  </footer>
+  <%= javascript_include_tag 'placeholders.min.js' %>
+</body>
+</html>
