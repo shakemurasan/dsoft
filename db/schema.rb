@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170718122522) do
+ActiveRecord::Schema.define(version: 20170723074121) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,15 @@ ActiveRecord::Schema.define(version: 20170718122522) do
     t.index ["alias_title"], name: "index_activities_on_alias_title", unique: true, using: :btree
     t.index ["image_path"], name: "index_activities_on_image_path", unique: true, using: :btree
     t.index ["times"], name: "index_activities_on_times", unique: true, using: :btree
+  end
+
+  create_table "books", force: :cascade do |t|
+    t.string   "title"
+    t.text     "contents"
+    t.string   "image_path"
+    t.datetime "order_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
