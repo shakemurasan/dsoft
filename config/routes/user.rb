@@ -1,3 +1,3 @@
 scope module: :user_pc, as: 'user_pc' do
-  # define routes.
+  resources 'books', only: [:index, :show]
 end
