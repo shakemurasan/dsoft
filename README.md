@@ -110,3 +110,10 @@ group :development, :test do
   gem 'sqlite3'
 end
 ```
+
+# 後で消す(サイトマップ)
+
+- (root)
+  - ランディングページ
+- (root)/cbef4e025a296e0e9b647421cc56be2c/activities
+  - 管理画面：Activity

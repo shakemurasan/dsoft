@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Times:</strong>
+  <%= @activity.times %>
+</p>
+
+<p>
+  <strong>Alias title:</strong>
+  <%= @activity.alias_title %>
+</p>
+
+<p>
+  <strong>Contents:</strong>
+  <%= @activity.contents %>
+</p>
+
+<p>
+  <strong>Image path:</strong>
+  <%= @activity.image_path %>
+</p>
+
+<p>
+  <strong>Order at:</strong>
+  <%= @activity.order_at %>
+</p>
+
+<%= link_to 'Edit', edit_admin_activity_path(@activity) %> |
+<%= link_to 'Back', admin_activities_path %>
