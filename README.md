@@ -83,3 +83,30 @@ http://localhost:3000/ にアクセスすると、ランディングページが
 ## herokuへのpush
 
 muramurasan, sin208, uphy の誰かに聞いてください！
+
+## PostgreSQL入ってないお・・・・
+
+入れてください(迫真)
+
+入れるの面倒だからSQLiteでいいすか？ って方は、Gemfileを開いて、以下のように書き換えてから `bundle install` しましょう
+
+before
+```
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+end
+```
+
+after
+```
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+  gem 'sqlite3'
+end
+```
