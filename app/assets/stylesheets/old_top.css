@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515 url('top/bg.jpg') no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+/* HEADER */
+
+.header {
+  padding: 170px 30px 80px;
+}
+
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 7.6rem;
+}
+
+.site-description {
+  margin-bottom: 50px;
+  color: #ddd;
+  font-size: 1.6rem;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.button:hover {
+  opacity: 0.9;
+}
+
+.button-showy {
+  background-color: #f1b400;
+}
+
+
+/* ABOUT ME */
+
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
+
+/* BOOKS */
+
+.books {
+  padding: 80px 0;
+  background-color: #151515;
+  color: #fff;
+}
+.books-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+.book-box {
+  display: table-cell;
+}
+.book-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  line-height: 142px;
+}
+.book-title {
+  margin: 0 20px 20px;
+  font-size: 2rem;
+}
+.book-text {
+  margin: 0 20px;
+  line-height: 2;
+}
+.book-image {
+  margin-bottom: 50px;
+}
+.book-intro {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+.book-button {
+  margin-top: 50px;
+}
+
+/* RECENT ACTIVITIES */
+
+.activities {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+.activities-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+.activity-box {
+  display: table-cell;
+}
+.activity-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  line-height: 142px;
+}
+.activity-title {
+  margin: 0 20px 20px;
+  font-size: 2rem;
+}
+.activity-text {
+  margin: 0 20px;
+  line-height: 2;
+}
+.activity-intro {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+.activity-button {
+  margin-top: 50px;
+}
+
+/* footer */
+
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+}
