@@ -117,3 +117,5 @@ end
   - ランディングページ
 - (root)/cbef4e025a296e0e9b647421cc56be2c/activities
   - 管理画面：Activity
+- (root)/cbef4e025a296e0e9b647421cc56be2c/books
+  - 管理画面：Book
