@@ -11,6 +11,7 @@
 # **`alias_title`**  | `string`           |
 # **`contents`**     | `text`             | `not null`
 # **`image_path`**   | `string`           |
+# **`order_at`**     | `datetime`         | `not null`
 # **`created_at`**   | `datetime`         | `not null`
 # **`updated_at`**   | `datetime`         | `not null`
 #
@@ -25,5 +26,4 @@
 #
 
 class Activity < ApplicationRecord
-  # TODO: validateの定義はrspec導入時にする
 end

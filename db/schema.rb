@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170718122522) do
     t.string   "alias_title"
     t.text     "contents",    null: false
     t.string   "image_path"
+    t.datetime "order_at",    null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["alias_title"], name: "index_activities_on_alias_title", unique: true, using: :btree

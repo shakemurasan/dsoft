@@ -5,6 +5,7 @@ class CreateActivities < ActiveRecord::Migration[5.0]
       t.string :alias_title, null: true
       t.text :contents, null: false
       t.string :image_path, null: true
+      t.datetime :order_at, null: false
 
       t.timestamps
 
