@@ -21,29 +21,10 @@
     <div>
       <div class="posts">
         <h1 class="content-subhead">活動報告</h1>
-
-        <% @activities.each do |activity| %>
-          <section class="post">
-            <header class="post-header">
-              <h2 class="post-title"><%= activity.times.nil? ? activity.alias_title : "第 #{activity.times} 回" %></h2>
-            </header>
-
-            <div class="post-description">
-              <p>
-                <%= simple_format(h(activity.contents)) %>
-              </p>
-              <div class="post-images pure-g">
-                <div class="pure-u-1">
-                  <% # TODO: この辺をimage_pathに差し替える。今はs3整備していないので決め打ち画像 %>
-                  <%= image({ class: "pure-img-responsive" }, activity) %>
-                </div>
-              </div>
-            </div>
-          </section>
-        <% end %>
-
+        <%= render "list", activities: @activities %>
       </div>
     </div>
+
     <%= render "user_pc/footer" %>
   </div>
 </div>

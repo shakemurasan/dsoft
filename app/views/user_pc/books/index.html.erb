@@ -21,36 +21,10 @@
     <div>
       <div class="posts">
         <h1 class="content-subhead">書籍紹介</h1>
-
-        <% @books.each do |book| %>
-          <section class="post">
-            <header class="post-header">
-              <h2 class="post-title"><%= book.title %></h2>
-
-              <p class="post-meta">
-                <% # TODO: 動的にcategoryを差し込む。categoriesテーブルが必要 & categoryがない場合の処理 %>
-                category
-                <a class="post-category post-category-algorithm" href="#">algorithm</a>
-                <a class="post-category post-category-architecture" href="#">architecture</a>
-              </p>
-            </header>
-
-            <div class="post-description">
-              <p>
-                <%= simple_format(h(book.contents)) %>
-              </p>
-              <div class="post-images pure-g">
-                <div class="pure-u-1">
-                  <% # TODO: この辺をimage_pathに差し替える。今はs3整備していないので決め打ち画像 %>
-                  <%= image({ class: "pure-img-responsive" }, book) %>
-                </div>
-              </div>
-            </div>
-          </section>
-        <% end %>
-
+        <%= render "list", books: @books %>
       </div>
     </div>
+
     <%= render "user_pc/footer" %>
   </div>
 </div>
