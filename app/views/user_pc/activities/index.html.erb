@@ -1,0 +1,76 @@
+<% #TODO: IEのバージョンによってCSSの呼び分け？ とりあえずIE9未満は今は捨てている %>
+<%= stylesheet_link_tag "https://unpkg.com/purecss@1.0.0/build/pure-min.css" %>
+<!--[if lte IE 8]>
+<!--link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<%= stylesheet_link_tag "https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" %>
+<!--<![endif]-->
+<!--[if lte IE 8]>
+<!-- link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<%= stylesheet_link_tag "user_pc/books"%>
+<!--<![endif]-->
+<%= stylesheet_link_tag "https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" %>
+
+<div id="layout" class="pure-g">
+  <div class="sidebar pure-u-1 pure-u-md-1-4">
+    <div class="header">
+      <h1 class="brand-title">ACTIVITIES</h1>
+      <h2 class="brand-tagline">これまでの活動</h2>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <%= link_to "DODO SOFT", root_path, class: "pure-button" %>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="content pure-u-1 pure-u-md-3-4">
+    <div>
+      <!-- A wrapper for all the blog posts -->
+      <div class="posts">
+        <h1 class="content-subhead">活動報告</h1>
+
+        <!-- A single blog post -->
+        <% @activities.each do |activity| %>
+          <section class="post">
+            <header class="post-header">
+              <h2 class="post-title"><%= activity.times.nil? ? activity.alias_title : "第 #{activity.times} 回" %></h2>
+            </header>
+
+            <div class="post-description">
+              <p>
+                <%= simple_format(h(activity.contents)) %>
+              </p>
+              <div class="post-images pure-g">
+                <div class="pure-u-1">
+                  <% # TODO: この辺をimage_pathに差し替える。今はs3整備していないので決め打ち画像 %>
+                  <% if activity.image_path.present? %>
+                    <img alt="Photo of someone working poolside at a resort"
+                         class="pure-img-responsive"
+                         src="<%= activity.image_path %>">
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </section>
+        <% end %>
+
+      </div>
+    </div>
+    <div class="footer">
+      <div class="pure-menu pure-menu-horizontal">
+        <ul>
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link">ABOUT US</a></li>
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link">EVENTS</a></li>
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link">CONTACTS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
