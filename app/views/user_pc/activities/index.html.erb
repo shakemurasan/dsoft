@@ -1,18 +1,4 @@
-<% #TODO: IEのバージョンによってCSSの呼び分け？ とりあえずIE9未満は今は捨てている %>
-<%= stylesheet_link_tag "https://unpkg.com/purecss@1.0.0/build/pure-min.css" %>
-<!--[if lte IE 8]>
-<!--link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-<![endif]-->
-<!--[if gt IE 8]><!-->
-<%= stylesheet_link_tag "https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" %>
-<!--<![endif]-->
-<!--[if lte IE 8]>
-<!-- link rel="stylesheet" href="css/layouts/blog-old-ie.css">
-<![endif]-->
-<!--[if gt IE 8]><!-->
-<%= stylesheet_link_tag "user_pc/books"%>
-<!--<![endif]-->
-<%= stylesheet_link_tag "https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" %>
+<%= render "user_pc/common_css_include" %>
 
 <div id="layout" class="pure-g">
   <%= render "user_pc/sidebar", title: "ACTIVITIES", description: "これまでの活動" %>
