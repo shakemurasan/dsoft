@@ -15,28 +15,13 @@
 <%= stylesheet_link_tag "https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" %>
 
 <div id="layout" class="pure-g">
-  <div class="sidebar pure-u-1 pure-u-md-1-4">
-    <div class="header">
-      <h1 class="brand-title">BOOKS</h1>
-      <h2 class="brand-tagline">これまで輪読した書籍</h2>
-
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <%= link_to "DODO SOFT", root_path, class: "pure-button" %>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+  <%= render "user_pc/sidebar", title: "BOOKS", description: "これまで輪読した書籍" %>
 
   <div class="content pure-u-1 pure-u-md-3-4">
     <div>
-      <!-- A wrapper for all the blog posts -->
       <div class="posts">
         <h1 class="content-subhead">書籍紹介</h1>
 
-        <!-- A single blog post -->
         <% @books.each do |book| %>
           <section class="post">
             <header class="post-header">
