@@ -57,11 +57,7 @@
               <div class="post-images pure-g">
                 <div class="pure-u-1">
                   <% # TODO: この辺をimage_pathに差し替える。今はs3整備していないので決め打ち画像 %>
-                  <a href="http://www.flickr.com/photos/uberlife/8915936174/">
-                    <img alt="Photo of someone working poolside at a resort"
-                         class="pure-img-responsive"
-                         src="<%= book.image_path.present? ? book.image_path : 'http://design-ec.com/d/e_others_50/m_e_others_500.png' %>">
-                  </a>
+                  <%= image({ class: "pure-img-responsive" }, book) %>
                 </div>
               </div>
             </div>
@@ -75,6 +71,8 @@
         <ul>
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">ABOUT US</a></li>
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">EVENTS</a></li>
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link">BOOKS</a></li>
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link">ACTIVITIES</a></li>
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">CONTACTS</a></li>
         </ul>
       </div>

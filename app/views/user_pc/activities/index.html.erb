@@ -50,11 +50,7 @@
               <div class="post-images pure-g">
                 <div class="pure-u-1">
                   <% # TODO: この辺をimage_pathに差し替える。今はs3整備していないので決め打ち画像 %>
-                  <% if activity.image_path.present? %>
-                    <img alt="Photo of someone working poolside at a resort"
-                         class="pure-img-responsive"
-                         src="<%= activity.image_path %>">
-                  <% end %>
+                  <%= image({ class: "pure-img-responsive" }, activity) %>
                 </div>
               </div>
             </div>
@@ -68,6 +64,8 @@
         <ul>
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">ABOUT US</a></li>
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">EVENTS</a></li>
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link">BOOKS</a></li>
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link">ACTIVITIES</a></li>
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">CONTACTS</a></li>
         </ul>
       </div>
