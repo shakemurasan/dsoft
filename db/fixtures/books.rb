@@ -9,7 +9,8 @@ Book.seed(:id,
               楽しいクイズやパズルで飽きることなく読み進むことができます。
               複雑難解なデザインパターンの概念が面白いほどよくわかる、目からウロコの画期的な書籍です。',
     image_path: 'https://covers.oreillystatic.com/images/9780596007126/lrg.jpg',
-    order_at: '2017-07-01'
+    order_at: '2017-07-01',
+    current: false
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ Book.seed(:id,
               Javaプログラマ全般、特にオブジェクト指向の初心者を対象に、
               全23のデザインパターンをわかりやすく説き明かした入門書です。',
     image_path: 'http://www.hyuki.com/images/dp1.png',
-    order_at: '2017-07-02'
+    order_at: '2017-07-02',
+    current: false
   },
   {
     id: 3,
@@ -28,7 +30,8 @@ Book.seed(:id,
               数あるパターンのなかから並行処理に役立つ12個を厳選し、Javaのコードを中心に徹底解説。
               ゼロからマルチスレッドプログラミングが学べる今までなかった入門書！',
     image_path: 'http://www.hyuki.com/dp/png/dp2cover.png',
-    order_at: '2017-07-03'
+    order_at: '2017-07-03',
+    current: false
   },
   {
     id: 4,
@@ -40,7 +43,8 @@ Book.seed(:id,
               そのリファクタリングの際、「パターン」を取り入れたり近づけたりするようにプログラムを改善していくのが、
               本書で紹介する「パターン指向リファクタリング」です。',
     image_path: 'http://cdn.www.tsutaya.co.jp/images/jacket/03108/9784822282387_1L.jpg',
-    order_at: '2017-07-04'
+    order_at: '2017-07-04',
+    current: false
   },
   {
     id: 5,
@@ -50,7 +54,8 @@ Book.seed(:id,
               「コードを理解し、テストできるようにし、リファクタリングを可能にし、機能を追加できるテクニック」
               を紹介している書籍です。',
     image_path: 'https://images-fe.ssl-images-amazon.com/images/I/51f-xfTWkkL.jpg',
-    order_at: '2017-07-05'
+    order_at: '2017-07-05',
+    current: false
   },
   {
     id: 6,
@@ -60,7 +65,8 @@ Book.seed(:id,
               「よりよいデザインに役立つポイント」を科学的な研究によって
               明らかにされた事実とともにウェブやアプリのデザインに応用できる形でわかりやすく解説。',
     image_path: 'https://www.oreilly.co.jp/books/images/picture_large978-4-87311-557-3.jpeg',
-    order_at: '2017-07-06'
+    order_at: '2017-07-06',
+    current: false
   },
   {
     id: 7,
@@ -71,7 +77,8 @@ Book.seed(:id,
               シンプルで高速なコードが書けるようになります。
               楽しみながらスキルアップもできて一石二鳥。さっそく挑戦してみましょう!',
     image_path: 'http://www.seshop.com/static/images/product/18365/L.png',
-    order_at: '2017-07-07'
+    order_at: '2017-07-07',
+    current: true
   },
   {
     id: 8,
@@ -83,7 +90,8 @@ Book.seed(:id,
               アーキテクチャにすることで、迅速なデプロイ、優れた回復性や
               スケーラビリティといった利点を実現しようとするものです。...背表紙より',
     image_path: 'https://www.oreilly.co.jp/books/images/picture_large978-4-87311-760-7.jpeg',
-    order_at: '2017-07-08'
+    order_at: '2017-07-08',
+    current: false
   },
   {
     id: 3,
@@ -91,6 +99,7 @@ Book.seed(:id,
     contents: 'Pythonは情報セキュリティの世界では他よりも先んじているプログラミング言語です。
               本書ではPythonを使った情報セキュリティにおける攻撃手法について解説します。',
     image_path: 'https://www.oreilly.co.jp/books/images/picture_large978-4-87311-731-7.jpeg',
-    order_at: '2017-07-09'
+    order_at: '2017-07-09',
+    current: true
   },
 )
