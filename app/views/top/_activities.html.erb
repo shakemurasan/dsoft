@@ -1,34 +1,14 @@
-<section class="activities" id="activities">
-  <h2 class="heading">RECENT ACTIVITIES</h2>
-  <p class="activity-intro">
-    直近3回分の活動について記録しています。<br>
-    更に過去の活動を参照したい場合は、[more] をクリックしてください。
-  </p>
-  <div class="activities-wrapper">
-    <div class="activity-box">
-      <div class="activity-title">第95回</div>
-      <p class="activity-text">
-        アットウェアさんで開催。<br>
-        マイクロサービスアーキテクチャ10章をやりました。<br>
-        また、100回記念の企画について、話を進めました。
+<h1 class="content-head is-center">Activities</h1>
+<div class="pure-g">
+  <% activities.each do |activity| %>
+    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+      <h3 class="content-subhead">
+        <i class="fa fa-rocket"></i>
+        <%= activity_title(activity) %>
+      </h3>
+      <p>
+        <%= activity.contents %>
       </p>
     </div>
-    <div class="activity-box">
-      <div class="activity-title">第94回</div>
-      <p class="activity-text">
-        アットウェアさんで開催。<br>
-        マイクロサービスアーキテクチャ9章（後半）をやりました。
-      </p>
-    </div>
-    <div class="activity-box">
-      <div class="activity-title">第93回</div>
-      <p class="activity-text">
-        代々木公園で開催。<br>
-        マイクロサービスアーキテクチャ9章（前半）をやりました。
-      </p>
-    </div>
-  </div>
-  <div class="activity-button">
-    <a class="button" href="#activities">MORE</a>
-  </div>
-</section>
+  <% end %>
+</div>
