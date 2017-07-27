@@ -4,33 +4,13 @@
     <h1 class="content-head content-head-ribbon">Current books</h1>
   </div>
 
-  <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-    <img width="300" alt="File Icons" class="pure-img-responsive" src="https://www.oreilly.co.jp/books/images/picture_large978-4-87311-760-7.jpeg">
-  </div>
-  <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-
-    <h2 class="content-head content-head-ribbon">Laboris nisi ut aliquip.</h2>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor.
-    </p>
-  </div>
-
-  <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-
-    <h2 class="content-head content-head-ribbon">Laboris nisi ut aliquip.</h2>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor.
-    </p>
-  </div>
-  <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-    <img width="300" alt="File Icons" class="pure-img-responsive" src="https://www.oreilly.co.jp/books/images/picture_large978-4-87311-760-7.jpeg">
-  </div>
+  <% books.each_with_index do |book, i| %>
+    <% if i % 2 == 0 %>
+      <%= render "book_image", image_path: book.image_path %>
+      <%= render "book_contents", title: book.title, contents: book.contents %>
+    <% else %>
+      <%= render "book_contents", title: book.title, contents: book.contents %>
+      <%= render "book_image", image_path: book.image_path %>
+    <% end %>
+  <% end %>
 </div>
