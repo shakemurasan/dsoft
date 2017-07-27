@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'rails_12factor', group: :production
+gem 'seed-fu'
 
 group :development, :test do
   gem 'pry-rails'

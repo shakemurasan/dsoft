@@ -1,13 +1,13 @@
 <%= render "user_pc/common_css_include" %>
 
 <div id="layout" class="pure-g">
-  <%= render "user_pc/sidebar", title: "BOOKS", description: "これまで輪読した書籍" %>
+  <%= render "user_pc/sidebar", title: "ACTIVITIES", description: "これまでの活動" %>
 
   <div class="content pure-u-1 pure-u-md-3-4">
     <div>
       <div class="posts">
-        <h1 class="content-subhead">書籍紹介</h1>
-        <%= render "list", books: @books %>
+        <h1 class="content-subhead">活動報告</h1>
+        <%= render "list", activities: @activities %>
       </div>
     </div>
 

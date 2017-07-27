@@ -1,0 +1,18 @@
+<% activities.each do |activity| %>
+  <section class="post">
+    <header class="post-header">
+      <h2 class="post-title"><%= activity.times.nil? ? activity.alias_title : "第 #{activity.times} 回" %></h2>
+    </header>
+
+    <div class="post-description">
+      <p>
+        <%= simple_format(h(activity.contents)) %>
+      </p>
+      <div class="post-images pure-g">
+        <div class="pure-u-1">
+          <%= image({ class: "pure-img-responsive" }, activity) %>
+        </div>
+      </div>
+    </div>
+  </section>
+<% end %>
