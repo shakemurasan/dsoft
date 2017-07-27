@@ -101,3 +101,5 @@ end
   - 管理画面：Book
 - https://dodosoft.herokuapp.com/books
   - Booksのmore。これまでにやった本の一覧
+- https://dodosoft.herokuapp.com/activities
+  - Activitiesのmore。これまでの活動一覧
