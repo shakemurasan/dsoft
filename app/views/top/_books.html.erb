@@ -1,36 +1,12 @@
-<section class="books" id="books">
-  <h2 class="heading">CURRENT BOOKS</h2>
-  <p class="book-intro">
-    現在勉強会で輪読および演習に使っている書籍です。<br>
-    過去に輪読した書籍を参照したい場合、[more] をクリックしてください。
-  </p>
-  <div class="books-wrapper">
-    <div class="book-box">
-      <%= image_tag("top/micro_service.jpeg", class: "book-image") %>
-      <div class="book-title">マイクロサービスアーキテクチャ</div>
-      <p class="book-text">
-        マイクロサービスとは、Thought Works社のマーチンファウラーと<br>
-        ジェームス・ルイスが最初に提唱したソフトウェアアーキテクチャです。<br>
-        モノリシック(一枚岩)なアーキテクチャを、ビジネス機能に沿って<br>
-        複数の小さい「マイクロサービス」に分割し、それらを連携させる<br>
-        アーキテクチャにすることで、迅速なデプロイ、優れた回復性や<br>
-        スケーラビリティといった利点を実現しようとするものです。...背表紙より
+<div class="ribbon l-box-lrg pure-g pure-u-lg ">
+  <div class="l-box-lrg is-center pure-u-1 pure-u-md-24-24 pure-u-lg-24-24">
+    <h1 class="content-head content-head-ribbon">Current books</h1>
+  </div>
 
-      </p>
-    </div>
-    <div class="book-box">
-      <%= image_tag("top/puzzle.jpg", class: "book-image") %>
-      <div class="book-title">プログラマ脳を鍛える数学パズル</div>
-      <p class="book-text">
-        本書では、70問の数学パズルを解くためのプログラムを作成していきます。<br>
-        実装方法よりも「どういう手順で実装すれば解けそうか」を考える事が重要。<br>
-        パズルを解くうちにアルゴリズムが身につき、<br>
-        シンプルで高速なコードが書けるようになります。<br>
-        楽しみながらスキルアップもできて一石二鳥。さっそく挑戦してみましょう!
-      </p>
-    </div>
-  </div>
-  <div class="book-button">
-    <a class="button" href="#books">MORE</a>
-  </div>
-</section>
+  <% books.each do |book| %>
+    <div class="pure-u-1 pure-u-md-1-24 pure-u-lg-1-24"></div>
+    <%= render "book_image", image_path: book.image_path %>
+    <%= render "book_contents", title: book.title, contents: book.contents %>
+    <div class="pure-u-1 pure-u-md-1-24 pure-u-lg-1-24"></div>
+  <% end %>
+</div>

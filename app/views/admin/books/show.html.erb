@@ -20,5 +20,10 @@
   <%= @book.order_at %>
 </p>
 
+<p>
+  <strong>Current book:</strong>
+  <%= @book.current ? "◯" : "-" %>
+</p>
+
 <%= link_to 'Edit', edit_admin_book_path(@book) %> |
 <%= link_to 'Back', admin_books_path %>

@@ -1,5 +1,13 @@
 Activity.seed(:id,
   {
+    id: 107,
+    times: 107,
+    alias_title: nil,
+    contents: 'もくもくと勉強しました。',
+    image_path: nil,
+    order_at: '2017-06-30'
+  },
+  {
     id: 108,
     times: 108,
     alias_title: nil,

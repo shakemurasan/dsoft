@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <%= stylesheet_link_tag "top" %>
-  <%= stylesheet_link_tag "pure" %>
+  <%= stylesheet_link_tag "pure/pure" %>
+  <%= stylesheet_link_tag "pure/grids-responsive-min.css" %>
   <%= stylesheet_link_tag "https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" %>
 </head>
 
@@ -29,11 +30,12 @@
 
   <div class="content-wrapper">
     <div class="content">
-      <h2 class="content-head is-center">
+      <h1 class="content-head is-center">
         About Us
-      </h2>
+      </h1>
       <div class="pure-g">
-        <div class="l-box pure-u-l pure-u-md-1-2 pure-u-lg-1-4">
+        <div class="l-box pure-u-l pure-u-md-1-24 pure-u-lg-1-24"></div>
+        <div class="l-box pure-u-l pure-u-md-22-24 pure-u-lg-22-24">
           <p>
             5年目社会人の同期でソフトウェアの設計・実装について勉強しています。
             新人のころから月1，2回ペースで100回以上実施してきました。
@@ -41,8 +43,14 @@
             突発的にLT大会や、開発合宿も開催しており、楽しくゆるく持続することをモットーに活動しています。
           </p>
         </div>
+        <div class="l-box pure-u-l pure-u-md-1-24 pure-u-lg-1-24"></div>
       </div>
     </div>
+
+    <%= render "top/books", books: @books %>
+
+    <%= render "top/activities", activities: @activities %>
+
   </div>
 </body>
 </html>

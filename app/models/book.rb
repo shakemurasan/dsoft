@@ -13,6 +13,7 @@
 # **`order_at`**    | `datetime`         |
 # **`created_at`**  | `datetime`         | `not null`
 # **`updated_at`**  | `datetime`         | `not null`
+# **`current`**     | `boolean`          | `default(FALSE), not null`
 #
 
 class Book < ApplicationRecord

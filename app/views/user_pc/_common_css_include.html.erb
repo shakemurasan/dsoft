@@ -1,15 +1,4 @@
-<% #TODO: IEのバージョンによってCSSの呼び分け？ とりあえずIE9未満は今は捨てている %>
-<%= stylesheet_link_tag "https://unpkg.com/purecss@1.0.0/build/pure-min.css" %>
-<!--[if lte IE 8]>
-<!--link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-<![endif]-->
-<!--[if gt IE 8]><!-->
-<%= stylesheet_link_tag "https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" %>
-<!--<![endif]-->
-<!--[if lte IE 8]>
-<!-- link rel="stylesheet" href="css/layouts/blog-old-ie.css">
-<![endif]-->
-<!--[if gt IE 8]><!-->
+<%= stylesheet_link_tag "pure/pure" %>
+<%= stylesheet_link_tag "pure/grids-responsive-min" %>
 <%= stylesheet_link_tag "user_pc/common"%>
-<!--<![endif]-->
 <%= stylesheet_link_tag "https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" %>
