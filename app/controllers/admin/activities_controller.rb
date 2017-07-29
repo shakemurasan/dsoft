@@ -1,4 +1,4 @@
-class Admin::ActivitiesController < ApplicationController
+class Admin::ActivitiesController < Admin::BaseController
   before_action :set_activity, only: [:show, :edit, :update, :destroy]
 
   # GET /activities
