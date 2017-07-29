@@ -8,6 +8,27 @@ $ cd docker
 $ docker-compose up
 ```
 
+しばらくすると以下のようなメッセージが表示されます。  
+
+```
+app_1       | * Version 3.9.1 (ruby 2.4.1-p111), codename: Private Caller
+app_1       | * Min threads: 5, max threads: 5
+app_1       | * Environment: development
+app_1       | * Listening on tcp://0.0.0.0:3000
+app_1       | Use Ctrl-C to stop
+```
+
+[http://localhost:3000](http://localhost:3000)で実行確認できます。
+
+こんなメッセージが出た場合:
+> Migrations are pending. To resolve this issue, run: bin/rake db:migrate RAILS_ENV=development
+
+appコンテナでdb:migrateを実行して下さい。
+
+```
+$ docker-compose exec app bin/rails db:migrate RAILS_ENV=development
+```
+
 ## Dockerを使わない場合の、ローカル環境構築方法
 
 ### Rubyのインストール
