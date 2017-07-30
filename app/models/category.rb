@@ -16,4 +16,6 @@
 class Category < ApplicationRecord
   has_many :book_categories
   has_many :books, through: :book_categories
+
+  validates :color_code, format: { with: /\A\#[0-9a-fA-F]{6}\z/ }
 end
