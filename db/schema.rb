@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170727080334) do
+ActiveRecord::Schema.define(version: 20170730020707) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,15 @@ ActiveRecord::Schema.define(version: 20170727080334) do
     t.index ["times"], name: "index_activities_on_times", unique: true, using: :btree
   end
 
+  create_table "book_categories", force: :cascade do |t|
+    t.integer  "book_id",     null: false
+    t.integer  "category_id", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["book_id"], name: "index_book_categories_on_book_id", using: :btree
+    t.index ["category_id"], name: "index_book_categories_on_category_id", using: :btree
+  end
+
   create_table "books", force: :cascade do |t|
     t.string   "title"
     t.text     "contents"
@@ -38,4 +47,13 @@ ActiveRecord::Schema.define(version: 20170727080334) do
     t.boolean  "current",    default: false, null: false
   end
 
+  create_table "categories", force: :cascade do |t|
+    t.string   "label",      null: false
+    t.string   "color_code", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "book_categories", "books"
+  add_foreign_key "book_categories", "categories"
 end

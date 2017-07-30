@@ -9,6 +9,7 @@
       <th>Contents</th>
       <th>Image path</th>
       <th>Order at</th>
+      <th>Category</th>
       <th>Current book</th>
       <th colspan="3"></th>
     </tr>
@@ -21,6 +22,11 @@
         <td><%= book.contents %></td>
         <td><%= book.image_path %></td>
         <td><%= book.order_at %></td>
+        <td>
+          <% book.categories.each do |category| %>
+            <strong style="<%= bg(category) %>"><%= category.label %> </strong>
+          <% end %>
+        </td>
         <td><%= book.current ? "◯" : "-" %></td>
         <td><%= link_to 'Show', [:admin, book] %></td>
         <td><%= link_to 'Edit', edit_admin_book_path(book) %></td>

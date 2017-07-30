@@ -17,4 +17,8 @@
 #
 
 class Book < ApplicationRecord
+  has_many :book_categories
+  has_many :categories, through: :book_categories
+
+  accepts_nested_attributes_for :book_categories
 end

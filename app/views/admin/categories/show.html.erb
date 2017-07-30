@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @category.label %>
+</p>
+
+<p>
+  <strong>Color code:</strong>
+  <span style="<%= bg(@category) %>"><%= @category.color_code %></span>
+</p>
+
+<%= link_to 'Edit', edit_admin_category_path(@category) %> |
+<%= link_to 'Back', admin_categories_path %>
