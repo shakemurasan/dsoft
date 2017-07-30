@@ -20,7 +20,7 @@ h4,
 h5,
 h6,
 label {
-  color: #13a200;
+  color: rgb(136, 176, 75);
 }
 
 .pure-img-responsive {
@@ -110,7 +110,7 @@ a.pure-button-primary {
 }
 
 .home-menu .pure-menu-selected a {
-  color: #d45d23;
+  color: rgb(136, 176, 75);
 }
 
 .home-menu a {
@@ -130,7 +130,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-  background: #53a202;
+  background: rgb(136, 176, 75);
   z-index: 1;
   overflow: hidden;
   /* The following styles are required for the "scroll-over" effect */
@@ -209,7 +209,11 @@ a.pure-button-primary {
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-  color: #36a202;
+  color: #3C3626;
+}
+
+.content-subhead-ribbon {
+  color: white;
 }
 
 .content-subhead i {
@@ -218,8 +222,8 @@ a.pure-button-primary {
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-  background: #0f8000;
-  color: #aaa;
+  background: rgb(136, 176, 75);
+  color: white;
 }
 
 /* This is the class pseudo class for more-button. */
@@ -230,7 +234,7 @@ a.pure-button-primary {
 
 /* This is the class for 'More' button. */
 .more-button {
-  color: #aaa;
+  color: #3C3626;
 }
 
 /* This is the class represents a container of the more-button. */
