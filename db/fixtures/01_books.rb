@@ -78,7 +78,7 @@ Book.seed(:id,
               楽しみながらスキルアップもできて一石二鳥。さっそく挑戦してみましょう!',
     image_path: 'http://www.seshop.com/static/images/product/18365/L.png',
     order_at: '2017-07-07',
-    current: true
+    current: false
   },
   {
     id: 8,
@@ -94,12 +94,38 @@ Book.seed(:id,
     current: false
   },
   {
-    id: 3,
+    id: 9,
     title: 'サイバーセキュリティプログラミング ―― Pythonで学ぶハッカーの思考',
     contents: 'Pythonは情報セキュリティの世界では他よりも先んじているプログラミング言語です。
-              本書ではPythonを使った情報セキュリティにおける攻撃手法について解説します。',
+              本書ではPythonを使った情報セキュリティにおける攻撃手法について解説します。
+              前半ではrawソケットやScapyライブラリなどネットワーク関連の内容を扱います。
+              後半ではCOMをPythonから扱う方法やVolatilityフレームワークなどシステム関連のトピックを扱います。',
     image_path: 'https://www.oreilly.co.jp/books/images/picture_large978-4-87311-731-7.jpeg',
     order_at: '2017-07-09',
     current: true
+  },
+  {
+      id: 10,
+      title: 'ITエンジニアのための機械学習理論入門',
+      contents: '現在話題となっている機械学習（Machine Learning）のツールやライブラリは内部でどのような計算をしているのか？
+      計算で得られた結果にはどのような意味があり，どのようにビジネス活用すればよいのか？
+      ――という疑問を持つエンジニアが増えています。本書は機械学習理論を数学的な背景からしっかりと解説をしていきます。
+      そしてPythonによるサンプルプログラムを実行することにより，その結果を見ることで機械学習を支える理論を実感できるようになります。',
+      image_path: 'https://images-fe.ssl-images-amazon.com/images/I/51jRrIRLSNL.jpg',
+      order_at: '2017-07-10',
+      current: true
+  },
+  {
+      id: 11,
+      title: 'Python機械学習プログラミング',
+      contents: '本書は、機械学習の理論とPython実践法を網羅的に解説した技術書です。
+      機械学習とは、データから学習した結果をもとに判定や予測を行うことです。
+      すでにさまざまな機械学習の方法が開発されています。
+      本書では、それらの方法について背景にある理論や特徴を解説した上で、Pythonによる実装法を説明します。
+      初期の機械学習アルゴリズムから取り上げ、前処理や次元削減、Webへの展開のほか、終盤ではディープラーニングについても見ていきます。
+      機械学習の理論と実践についてバランスよく解説してあり、AIプログラミングの第一歩を踏み出すための格好の一冊です。',
+      image_path: 'https://images-fe.ssl-images-amazon.com/images/I/611cFWZK1-L.jpg',
+      order_at: '2017-07-11',
+      current: true
   },
 )
