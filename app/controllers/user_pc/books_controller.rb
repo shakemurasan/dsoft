@@ -4,7 +4,7 @@ class UserPc::BooksController < ApplicationController
   def index
     category_id = params[:category_id]
     if category_id.present?
-      @books = Book.where(id: BookCategory.where(category_id: category_id).select(:book_id)).order(order_at: :desc)
+      @books = Book.with_category(category_id).order(order_at: :desc)
     else
       @books = Book.all.order(order_at: :desc)
     end
