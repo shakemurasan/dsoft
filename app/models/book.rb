@@ -21,4 +21,6 @@ class Book < ApplicationRecord
   has_many :categories, through: :book_categories
 
   accepts_nested_attributes_for :book_categories
+
+  scope :with_category, -> (category_id) { where(id: BookCategory.where(category_id: category_id).select(:book_id)) }
 end
