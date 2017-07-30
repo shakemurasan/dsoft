@@ -8,7 +8,7 @@ Book.seed(:id,
               刺激的なレイアウト、思わず膝を叩く見事なたとえ、引き込まれる小話、
               楽しいクイズやパズルで飽きることなく読み進むことができます。
               複雑難解なデザインパターンの概念が面白いほどよくわかる、目からウロコの画期的な書籍です。',
-    image_path: 'https://covers.oreillystatic.com/images/9780596007126/lrg.jpg',
+    image_path: 'https://s3-ap-northeast-1.amazonaws.com/dodosoft/books/lrg.jpg',
     order_at: '2017-07-01',
     current: false
   },
@@ -19,7 +19,7 @@ Book.seed(:id,
               本書『Java言語で学ぶデザインパターン入門』は、プログラミング言語の書籍で定評のある結城浩が、
               Javaプログラマ全般、特にオブジェクト指向の初心者を対象に、
               全23のデザインパターンをわかりやすく説き明かした入門書です。',
-    image_path: 'http://www.hyuki.com/images/dp1.png',
+    image_path: 'https://s3-ap-northeast-1.amazonaws.com/dodosoft/books/dp1.png',
     order_at: '2017-07-02',
     current: false
   },
@@ -29,7 +29,7 @@ Book.seed(:id,
     contents: 'デッドロックなどのバグを避け、パフォーマンスに優れたマルチスレッドプログラムを書くには？
               数あるパターンのなかから並行処理に役立つ12個を厳選し、Javaのコードを中心に徹底解説。
               ゼロからマルチスレッドプログラミングが学べる今までなかった入門書！',
-    image_path: 'http://www.hyuki.com/dp/png/dp2cover.png',
+    image_path: 'https://s3-ap-northeast-1.amazonaws.com/dodosoft/books/dp2cover.png',
     order_at: '2017-07-03',
     current: false
   },
@@ -42,7 +42,7 @@ Book.seed(:id,
               開発過程で複雑になっていくプログラムを改善し、バグを減らし、機能拡張にも有効です。
               そのリファクタリングの際、「パターン」を取り入れたり近づけたりするようにプログラムを改善していくのが、
               本書で紹介する「パターン指向リファクタリング」です。',
-    image_path: 'http://cdn.www.tsutaya.co.jp/images/jacket/03108/9784822282387_1L.jpg',
+    image_path: 'https://s3-ap-northeast-1.amazonaws.com/dodosoft/books/9784822282387_1L.jpg',
     order_at: '2017-07-04',
     current: false
   },
@@ -53,7 +53,7 @@ Book.seed(:id,
               構造が複雑で理解できないようなコードに対する分析手法・対処手法について解説します。つまり、
               「コードを理解し、テストできるようにし、リファクタリングを可能にし、機能を追加できるテクニック」
               を紹介している書籍です。',
-    image_path: 'https://images-fe.ssl-images-amazon.com/images/I/51f-xfTWkkL.jpg',
+    image_path: 'https://s3-ap-northeast-1.amazonaws.com/dodosoft/books/51f-xfTWkkL.jpg',
     order_at: '2017-07-05',
     current: false
   },
@@ -64,7 +64,7 @@ Book.seed(:id,
               長年にわたりインタフェースデザインに携わってきた心理学者が
               「よりよいデザインに役立つポイント」を科学的な研究によって
               明らかにされた事実とともにウェブやアプリのデザインに応用できる形でわかりやすく解説。',
-    image_path: 'https://www.oreilly.co.jp/books/images/picture_large978-4-87311-557-3.jpeg',
+    image_path: 'https://s3-ap-northeast-1.amazonaws.com/dodosoft/books/picture_large978-4-87311-557-3.jpeg',
     order_at: '2017-07-06',
     current: false
   },
@@ -76,7 +76,7 @@ Book.seed(:id,
               パズルを解くうちにアルゴリズムが身につき、
               シンプルで高速なコードが書けるようになります。
               楽しみながらスキルアップもできて一石二鳥。さっそく挑戦してみましょう!',
-    image_path: 'http://www.seshop.com/static/images/product/18365/L.png',
+    image_path: 'https://s3-ap-northeast-1.amazonaws.com/dodosoft/books/L.png',
     order_at: '2017-07-07',
     current: false
   },
@@ -89,7 +89,7 @@ Book.seed(:id,
               複数の小さい「マイクロサービス」に分割し、それらを連携させる
               アーキテクチャにすることで、迅速なデプロイ、優れた回復性や
               スケーラビリティといった利点を実現しようとするものです。...背表紙より',
-    image_path: 'https://www.oreilly.co.jp/books/images/picture_large978-4-87311-760-7.jpeg',
+    image_path: 'https://s3-ap-northeast-1.amazonaws.com/dodosoft/books/picture_large978-4-87311-760-7.jpeg',
     order_at: '2017-07-08',
     current: false
   },
@@ -100,7 +100,7 @@ Book.seed(:id,
               本書ではPythonを使った情報セキュリティにおける攻撃手法について解説します。
               前半ではrawソケットやScapyライブラリなどネットワーク関連の内容を扱います。
               後半ではCOMをPythonから扱う方法やVolatilityフレームワークなどシステム関連のトピックを扱います。',
-    image_path: 'https://www.oreilly.co.jp/books/images/picture_large978-4-87311-731-7.jpeg',
+    image_path: 'https://s3-ap-northeast-1.amazonaws.com/dodosoft/books/picture_large978-4-87311-731-7.jpeg',
     order_at: '2017-07-09',
     current: true
   },
@@ -111,7 +111,7 @@ Book.seed(:id,
       計算で得られた結果にはどのような意味があり，どのようにビジネス活用すればよいのか？
       ――という疑問を持つエンジニアが増えています。本書は機械学習理論を数学的な背景からしっかりと解説をしていきます。
       そしてPythonによるサンプルプログラムを実行することにより，その結果を見ることで機械学習を支える理論を実感できるようになります。',
-      image_path: 'https://images-fe.ssl-images-amazon.com/images/I/51jRrIRLSNL.jpg',
+      image_path: 'https://s3-ap-northeast-1.amazonaws.com/dodosoft/books/51jRrIRLSNL.jpg',
       order_at: '2017-07-10',
       current: true
   },
@@ -124,7 +124,7 @@ Book.seed(:id,
       本書では、それらの方法について背景にある理論や特徴を解説した上で、Pythonによる実装法を説明します。
       初期の機械学習アルゴリズムから取り上げ、前処理や次元削減、Webへの展開のほか、終盤ではディープラーニングについても見ていきます。
       機械学習の理論と実践についてバランスよく解説してあり、AIプログラミングの第一歩を踏み出すための格好の一冊です。',
-      image_path: 'https://images-fe.ssl-images-amazon.com/images/I/611cFWZK1-L.jpg',
+      image_path: 'https://s3-ap-northeast-1.amazonaws.com/dodosoft/books/611cFWZK1-L.jpg',
       order_at: '2017-07-11',
       current: true
   },
