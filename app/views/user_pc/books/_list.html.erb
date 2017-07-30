@@ -6,7 +6,7 @@
       <p class="post-meta">
         category
         <% book.categories.each do |category| %>
-          <a class="post-category" style="background-color: <%= category.color_code %>" href="#"><%= category.label %></a>
+          <%= link_to category.label, user_pc_books_path(category_id: category.id), { class: "post-category", style: bg(category) } %>
         <% end %>
       </p>
     </header>
