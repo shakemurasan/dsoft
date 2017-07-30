@@ -1,8 +1,10 @@
-<h1 class="content-head is-center">Activities</h1>
-<div class="l-box-lrg pure-g pure-u-lg">
+<div class="ribbon l-box-lrg pure-g pure-u-lg">
+  <div class="l-box-lrg is-center pure-u-1 pure-u-md-24-24 pure-u-lg-24-24">
+    <h1 class="content-head content-head-ribbon">Activities</h1>
+  </div>
   <% activities.each do |activity| %>
     <div class="l-box pure-u-l pure-u-xs-1-24 pure-u-lg-11-24">
-      <h3 class="content-subhead">
+      <h3 class="content-subhead-ribbon">
         <i class="fa fa-rocket"></i>
         <%= activity_title(activity) %>
       </h3>
