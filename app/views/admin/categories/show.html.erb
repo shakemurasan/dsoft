@@ -7,7 +7,7 @@
 
 <p>
   <strong>Color code:</strong>
-  <%= @category.color_code %>
+  <span style="<%= bg(@category) %>"><%= @category.color_code %></span>
 </p>
 
 <%= link_to 'Edit', edit_admin_category_path(@category) %> |
