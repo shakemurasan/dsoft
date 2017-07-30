@@ -32,8 +32,8 @@
   </div>
 
   <div class="field">
-    <%= collection_check_boxes(:book, :category_ids, Category.all, :id, :label) do |book| %>
-      <%= book.label { book.check_box + book.text } %>
+    <%= collection_check_boxes(:book, :category_ids, Category.all, :id, :label) do |category| %>
+      <%= category.label(style: bg(category.object)) { category.check_box + category.text } %>
     <% end %>
   </div>
 

@@ -21,6 +21,13 @@
 </p>
 
 <p>
+  <strong>Category:</strong>
+  <% @book.categories.each do |category| %>
+    <strong style="<%= bg(category) %>"><%= category.label %> </strong>
+  <% end %>
+</p>
+
+<p>
   <strong>Current book:</strong>
   <%= @book.current ? "◯" : "-" %>
 </p>
