@@ -122,10 +122,12 @@ end
 
 - https://dodosoft.herokuapp.com
   - ランディングページ
-- https://dodosoft.herokuapp.com/cbef4e025a296e0e9b647421cc56be2c/activities
+- https://dodosoft.herokuapp.com/admin/activities
   - 管理画面：Activity
-- https://dodosoft.herokuapp.com/cbef4e025a296e0e9b647421cc56be2c/books
+- https://dodosoft.herokuapp.com/admin/books
   - 管理画面：Book
+- https://dodosoft.herokuapp.com/admin/categories
+  - 管理画面：Category
 - https://dodosoft.herokuapp.com/books
   - Booksのmore。これまでにやった本の一覧
 - https://dodosoft.herokuapp.com/activities
