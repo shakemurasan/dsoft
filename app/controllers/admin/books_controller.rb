@@ -70,6 +70,6 @@ class Admin::BooksController < Admin::BaseController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def book_params
-      params.require(:book).permit(:title, :contents, :image_path, :current)
+      params.require(:book).permit(:title, :contents, :image_path, :current, { category_ids: [] })
     end
 end

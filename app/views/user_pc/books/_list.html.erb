@@ -4,10 +4,10 @@
       <h2 class="post-title"><%= book.title %></h2>
 
       <p class="post-meta">
-        <% # TODO: 動的にcategoryを差し込む。categoriesテーブルが必要 & categoryがない場合の処理 %>
         category
-        <a class="post-category post-category-algorithm" href="#">algorithm</a>
-        <a class="post-category post-category-architecture" href="#">architecture</a>
+        <% book.categories.each do |category| %>
+          <a class="post-category" style="background-color: <%= category.color_code %>" href="#"><%= category.label %></a>
+        <% end %>
       </p>
     </header>
 
