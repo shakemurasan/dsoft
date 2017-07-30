@@ -18,16 +18,22 @@ app_1       | * Listening on tcp://0.0.0.0:3000
 app_1       | Use Ctrl-C to stop
 ```
 
-[http://localhost:3000](http://localhost:3000)で実行確認できます。
-
-こんなメッセージが出た場合:
-> Migrations are pending. To resolve this issue, run: bin/rake db:migrate RAILS_ENV=development
-
-appコンテナでdb:migrateを実行して下さい。
+ここでDBを初期化します。  
+別のシェルを立ち上げて、appコンテナでdb:migrateを実行して下さい。
 
 ```
 $ docker-compose exec app bin/rails db:migrate RAILS_ENV=development
 ```
+
+初期状態ではデータベースが空っぽなので、シードデータを投入しましょう。
+
+```bash
+$ docker-compose exec app rake db:seed_fu
+```
+
+完了です。以下のURLにアクセスして下さい。
+
+[http://localhost:3000](http://localhost:3000)
 
 ## Dockerを使わない場合の、ローカル環境構築方法
 
@@ -116,11 +122,11 @@ end
 
 - https://dodosoft.herokuapp.com
   - ランディングページ
+- https://dodosoft.herokuapp.com/cbef4e025a296e0e9b647421cc56be2c/activities
+  - 管理画面：Activity
+- https://dodosoft.herokuapp.com/cbef4e025a296e0e9b647421cc56be2c/books
+  - 管理画面：Book
 - https://dodosoft.herokuapp.com/books
   - Booksのmore。これまでにやった本の一覧
 - https://dodosoft.herokuapp.com/activities
   - Activitiesのmore。これまでの活動一覧
-- https://dodosoft.herokuapp.com/admin/activities
-  - 管理画面：Activity
-- https://dodosoft.herokuapp.com/admin/books
-  - 管理画面：Book

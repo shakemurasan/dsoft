@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
   <%= stylesheet_link_tag "top" %>
   <%= stylesheet_link_tag "pure/pure" %>
@@ -15,8 +16,8 @@
       <!--<a class="pure-menu-heading" href="">Dodo Soft</a>-->
       <ul class="pure-menu-list">
         <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">About Us</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link">Events</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link">Contacts</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link" href="https://atnd.org/events/89930?k=7f1c184ecab4fd0da67ae5a30acff15f">Events</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link" href="#contact">Contacts</a></li>
       </ul>
     </div>
   </div>
@@ -37,7 +38,7 @@
         <div class="l-box pure-u-l pure-u-md-1-24 pure-u-lg-1-24"></div>
         <div class="l-box pure-u-l pure-u-md-22-24 pure-u-lg-22-24">
           <p>
-            5年目社会人の同期でソフトウェアの設計・実装について勉強しています。
+            社会人<%= @grade %>年目の同期でソフトウェアの設計・実装について勉強しています。
             新人のころから月1，2回ペースで100回以上実施してきました。
             そのとき必要と感じた技術を中心に輪読やグループワークで学習しています。
             突発的にLT大会や、開発合宿も開催しており、楽しくゆるく持続することをモットーに活動しています。
@@ -51,7 +52,7 @@
 
     <%= render "top/activities", activities: @activities %>
 
-    <div class="content content-form">
+    <div id="contact" class="content content-form">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeReSkQWGMtvc2WfyZbnOF7HeiVDknylvJJGoBmwdddm_mHQw/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
     </div>
 
