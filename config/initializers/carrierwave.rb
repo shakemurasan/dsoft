@@ -1,26 +1,17 @@
 CarrierWave.configure do |config|
-  config.fog_credentials = {
-      :provider               => 'AWS',
-      :aws_access_key_id      => ENV["AWS_ACCESS_KEY_ID"],
-      :aws_secret_access_key  => ENV["AWS_SECRET_ACCESS_KEY"],
-      :region                 => 'ap-northeast-1'
-  }
+  if Rails.env.development? || Rails.env.test?
+    config.storage = :file
+  else
+    config.storage = :fog
 
-  case Rails.env
-    when 'production'
-      config.fog_directory = 'dodosoft'
-      config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/dodosoft'
+    config.fog_credentials = {
+        :provider               => 'AWS',
+        :aws_access_key_id      => ENV["AWS_ACCESS_KEY_ID"],
+        :aws_secret_access_key  => ENV["AWS_SECRET_ACCESS_KEY"],
+        :region                 => 'ap-northeast-1'
+    }
 
-    when 'staging'
-      config.fog_directory = 'dodosoft'
-      config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/dodosoft'
-
-    when 'development'
-      config.fog_directory = 'dodosoft-dev'
-      config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/dodosoft-dev'
-
-    when 'test'
-      config.fog_directory = 'dodosoft-dev'
-      config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/dodosoft-dev'
+    config.fog_directory = 'dodosoft'
+    config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/dodosoft'
   end
 end
