@@ -7,7 +7,7 @@
     <tr>
       <th>Title</th>
       <th>Contents</th>
-      <th>Image path</th>
+      <th>Image</th>
       <th>Order at</th>
       <th>Category</th>
       <th>Current book</th>
@@ -20,7 +20,7 @@
       <tr>
         <td><%= book.title %></td>
         <td><%= book.contents %></td>
-        <td><%= book.image_path %></td>
+        <td><%= image_tag book.image_path.to_s %></td>
         <td><%= book.order_at %></td>
         <td>
           <% book.categories.each do |category| %>

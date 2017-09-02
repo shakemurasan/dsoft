@@ -22,5 +22,7 @@ class Book < ApplicationRecord
 
   accepts_nested_attributes_for :book_categories
 
+  mount_uploader :image_path, ImageUploader
+
   scope :with_category, -> (category_id) { where(id: BookCategory.where(category_id: category_id).select(:book_id)) }
 end

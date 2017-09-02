@@ -8,7 +8,7 @@
       <th>Times</th>
       <th>Alias title</th>
       <th>Contents</th>
-      <th>Image path</th>
+      <th>Image</th>
       <th>Order at</th>
       <th colspan="3"></th>
     </tr>
@@ -20,7 +20,7 @@
         <td><%= activity.times %></td>
         <td><%= activity.alias_title %></td>
         <td><%= activity.contents %></td>
-        <td><%= activity.image_path %></td>
+        <td><%= image_tag activity.image_path.to_s %></td>
         <td><%= activity.order_at %></td>
         <td><%= link_to 'Show', [:admin, activity] %></td>
         <td><%= link_to 'Edit', edit_admin_activity_path(activity) %></td>

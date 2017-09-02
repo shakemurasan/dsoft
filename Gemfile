@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'rails_12factor', group: :production
 gem 'seed-fu'
 gem "font-awesome-rails"
+gem 'carrierwave'
+gem 'fog'
 
 group :development, :test do
   gem 'pry-rails'
