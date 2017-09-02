@@ -9,13 +9,13 @@ services:
         WORK: "/usr/src/dodosoft"
     volumes:
       # ソースコード一式マウント
-      - "..:/usr/src/dodosoft"
+      - "..:/usr/src/dodosoft:delegated"
       # 起動スピード向上のためgem関連を保存しておく
-      - "./data/app/bundle/gems:/usr/local/bundle/gems"
-      - "./data/app/bundle/cache:/usr/local/bundle/cache"
-      - "./data/app/bundle/extensions:/usr/local/bundle/extensions"
-      - "./data/app/bundle/specifications:/usr/local/bundle/specifications"
-      - "./data/app/bundle/.bundle:/root/.bundle"
+      - "./data/app/bundle/gems:/usr/local/bundle/gems:delegated"
+      - "./data/app/bundle/cache:/usr/local/bundle/cache:delegated"
+      - "./data/app/bundle/extensions:/usr/local/bundle/extensions:delegated"
+      - "./data/app/bundle/specifications:/usr/local/bundle/specifications:delegated"
+      - "./data/app/bundle/.bundle:/root/.bundle:delegated"
     environment:
       DSOFT_DATABASE_DEV_USER: postgres
       DSOFT_DATABASE_DEV_HOST: postgres
@@ -29,6 +29,6 @@ services:
       dockerfile: Dockerfile.postgres
     volumes:
       # DBのデータ永続化
-      - "./data/postgres:/var/lib/postgresql/data"
+      - "./data/postgres:/var/lib/postgresql/data:delegated"
       # 初回起動時dsoftデータベース作成
-      - "./init-user-db.sh:/docker-entrypoint-initdb.d/init-user-db.sh"
+      - "./init-user-db.sh:/docker-entrypoint-initdb.d/init-user-db.sh:delegated"
