@@ -1,7 +1,9 @@
 <%= render "user_pc/common_css_include" %>
 
 <div id="layout" class="pure-g">
-  <%= render "user_pc/sidebar", title: "BOOKS", description: "これまで輪読した書籍" %>
+  <%= render "user_pc/sidebar", title: "BOOKS" do %>
+  <span>これまで</span><span>輪読した</span><span>書籍</span>
+  <% end %>
 
   <div class="content pure-u-1 pure-u-md-3-4">
     <div>
