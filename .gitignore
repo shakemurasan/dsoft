@@ -21,3 +21,6 @@
 
 # Ignore rbenv files
 /.ruby-version
+
+# Ignore upload temporary file
+/public/uploads/tmp
