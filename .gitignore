@@ -21,3 +21,6 @@
 
 # Ignore rbenv files
 /.ruby-version
+
+# Ignore uploaded images
+/public/uploads

@@ -29,7 +29,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'rails_12factor', group: :production
-gem 'seed-fu'
 gem "font-awesome-rails"
 gem 'carrierwave'
 gem 'fog'
@@ -51,6 +50,7 @@ group :development do
 
   gem 'annotate'
   gem 'better_errors'
+  gem 'seed-fu'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
