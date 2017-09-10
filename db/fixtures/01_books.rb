@@ -7,7 +7,7 @@ end
 
 # 指定されたidのシード画像データのPathnameを取得する。
 def seed_image(id)
-  return Rails.root.join("seed/images/%d.jpg" % id).open
+  return Rails.root.join("seed/images/books/%d.jpg" % id).open
 end
 
 Book.seed(:id,
